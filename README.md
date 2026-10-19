@@ -1,4 +1,8 @@
-# clinic-web (template)
+# clinic-web (template + demo)
+
+This repo is also the public demo: https://emieliasdev.github.io/clinic-web/
+(repo variable `DEMO_MODE=true`, fake data in the browser, nothing saved).
+Repos made from the template don't get that variable, so they build normally.
 
 Starter deploy repo for a new clinic. Holds only the clinic's branding; all
 app code stays in `EmiEliasDev/booking-app`.
