@@ -25,7 +25,7 @@ public/logo.png                the clinic's logo (add it)
    - variable `CLINIC_ID` = the id from step 1
 5. UI/UX edits `clinic.config.json` (name, shortName, logoAlt, the three colors
    `themeColor` / `accentSoft` / `accentDeep`, services, contact) and adds
-   `public/logo.png`. Pushing to `main` deploys.
+   `public/logo.png`, then sets `"logo": "logo.png"` (empty = letter monogram). Pushing to `main` deploys.
 6. Site: `https://emieliasdev.github.io/<clinic>-web/`.
 
 ## Notes
