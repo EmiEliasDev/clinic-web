@@ -23,6 +23,8 @@ concurrency:
 
 jobs:
   deploy:
+    # Skip in the template itself; runs in each repo created from it.
+    if: github.repository != 'EmiEliasDev/clinic-web'
     uses: EmiEliasDev/booking-app/.github/workflows/build-clinic.yml@main
     with:
       clinic_id: ${{ vars.CLINIC_ID }}
