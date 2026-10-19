@@ -1,10 +1,9 @@
 {
   "name": "Tu Clínica",
   "shortName": "Clínica",
-  "logo": "logo.png",
+  "logo": "",
   "logoAlt": "Logo de Tu Clínica",
   "locale": "es-MX",
-  "timezone": "America/Tijuana",
   "themeColor": "#6b3a96",
   "accentSoft": "#f3eaf8",
   "accentDeep": "#4e2870",

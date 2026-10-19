@@ -23,11 +23,12 @@ concurrency:
 
 jobs:
   deploy:
-    # Skip in the template itself; runs in each repo created from it.
-    if: github.repository != 'EmiEliasDev/clinic-web'
     uses: EmiEliasDev/booking-app/.github/workflows/build-clinic.yml@main
     with:
       clinic_id: ${{ vars.CLINIC_ID }}
+      # DEMO_MODE=true (repo variable) builds the in-browser demo: fake data, no Supabase.
+      # Set only on EmiEliasDev/clinic-web; variables don't copy to repos made from the template.
+      demo: ${{ vars.DEMO_MODE == 'true' }}
       base_path: /${{ github.event.repository.name }}/
       app_ref: main
       branding_repo: ${{ github.repository }}
